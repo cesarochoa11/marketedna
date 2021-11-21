@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	width: 90%;
+	height: auto;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	 
+}
+
+.grid_container{
+	display: grid;
+	gap: 3px;
+	grid-template: 
+	"header" 180px
+	"slider" 350px
+	"centro" 350px
+	"izquierda" 350px
+	"derecha" 350px
+	"nuevo" 350px
+	"footer" 30px
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: #533A71;
+}
+
+.titulo {
+	grid-area: titulo;
+	background-color: #50C5B7;width: 100%
+}
+
+
+.izquierda{
+	grid-area: izquierda;
+	background-color: #6184DB;
+	width: 100%;
+}
+
+.centro{
+	grid-area: centro;
+	background-color: #50C5B7;width: 100%;
+}
+
+.derecha{
+	grid-area: derecha;
+	background-color: #6184DB;width: 100%;
+}
+
+.nuevo{
+	grid-area: nuevo;
+	background-color: #9CEC5B;
+}
+
+.slider{
+	grid-area: slider;
+	background-color: #F0F465;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #B53471;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+	.grid_container{
+
+		grid-template: 
+		"header" 180px
+		"titulo" 100px
+		"slider" 350px
+		"centro" 350px
+		"izquierda" 350px
+		"derecha" 350px
+		"nuevo" 350px
+		"footer" 180px /
+		 auto;
+ 	}
+html{
+	width: 95%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+	
+	
+	
+	
+	
+
+}
+
+
+@media (min-width: 768px) {
+
+	.grid_container{
+
+		grid-template: 
+		"header 	header" 	180px
+		"titulo 	titulo"		100px
+		"slider 	slider" 	450px
+		"centro 	izquierda" 	400px
+		"derecha 	nuevo"		400px 
+		"footer 	footer" 	180px /
+		 auto 		auto;
+ 	}
+html{
+	width: 90%;
+	height: auto;margin-right: auto;
+	margin-left: auto;
+}
+}
+
+
+@media (min-width: 992px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	header" 	180px
+		"titulo 	titulo 	titulo"		100px
+		"slider 	slider 	slider" 	550px
+		"izquierda 	centro 	derecha" 	400px
+		"footer 	footer 	footer" 	100px /
+		 auto 		auto 	auto;
+	}
+	.nuevo{display: none;}
+html{
+	width: 95%;
+	height: auto;margin-right: auto;
+	margin-left: auto;
+}
+}
+
+
+@media (min-width: 1200px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	header" 	180px
+		"titulo 	titulo 	titulo"		100px
+		"slider 	slider 	slider" 	600px
+		"izquierda 	centro 	derecha" 	450px
+		"footer 	footer 	footer" 	100px /
+		 auto 		auto 	auto;
+	}
+	
+	.nuevo{display: none;}
+html{
+	width: 90%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+}
